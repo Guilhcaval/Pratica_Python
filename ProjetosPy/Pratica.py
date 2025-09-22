@@ -38,4 +38,56 @@ while(True):
         print("Saindo...")
         break
 '''
+'''
+produtos = [
+{
+
+    'nome':'Shampoo',
+    'preco':'20 R$'
+
+},
+{
+
+    'nome':'Condicionador',
+    'preco':'25 R$'
+
+},
+{
+
+    'nome':'Refrigerante',
+    'preco':'7 R$'
+
+}]
+
+for produto in produtos:
+    print(produto['nome'],produto['preco'])
+'''
+produtos = []
+
+while (True):
+    nome_digi = input("Digite o nome do produto: ")
+    preco_digi = float(input("Digite o preço do produto: "))
+    
+
+    produto = {
+    'nome': nome_digi ,
+    'preco': preco_digi
+    }
+    produtos.append(produto)
+
+    continuar = input("Deseja adicionar outro produto? (s/n): ")
+    if continuar.lower() == 'n':
+        break
+
+for produto in produtos:
+    print(produto['nome'],produto['preco'])
+
+
+
+
+
+
+
+
+
 
